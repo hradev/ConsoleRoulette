@@ -43,7 +43,7 @@ public class CommandLineAppStartupRunner implements CommandLineRunner {
                 Scanner myReader = new Scanner(myObj);
                 while (myReader.hasNextLine()) {
                     String userLine = myReader.nextLine();
-                    String details[] = userLine.split(" ");
+                    String details[] = userLine.split(",");
                     
                     if(details.length == 3) {
                         double totalWinnings = Double.parseDouble(details[1]);
